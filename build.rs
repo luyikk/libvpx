@@ -1,5 +1,8 @@
 use cc;
 fn main() {
+    //cargo build --target armv7-linux-androideabi --release
+    //cargo build --target aarch64-linux-android --release
+    //cargo build  --target i686-linux-android --release
     std::env::remove_var("path");
     std::env::set_var("path","C:/Program Files/Unity/Hub/Editor/2020.2.6f1c1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/windows-x86_64/bin");
     let mut c = cc::Build::new();
