@@ -16,6 +16,6 @@ fn main() {
     for f in std::fs::read_dir("source").unwrap().filter_map(|x|x.ok()) {
         c.file(f.path());
     }
-    c.opt_level(2);
+    //c.opt_level(2);
     c.compile("libyuv.a");
 }
